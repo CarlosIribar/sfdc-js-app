@@ -1,0 +1,26 @@
+{
+  "name": "sfdc-js-app",
+  "version": "1.0.0",
+  "description": "Skeleton Salesforce JS App ",
+  "main": "index.js",
+  "scripts": {
+    "deploySR": "7z a -tzip \"staticresources.zip\" \"bundle.js\" \"bundle.js.map\" | node deploySR.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node node_modules/.bin/webpack-dev-server --https --inline --content-base build/",
+    "build": "node node_modules/.bin/webpack",
+    "predeploySR": "npm run build" 
+  },
+  "author": "Carlos Iribar - Oktana",
+  "license": "ISC",
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-core": "^6.10.4",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.9.0",
+    "css-loader": "^0.23.1",
+    "jsforce": "^1.6.5",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
+  }
+}
