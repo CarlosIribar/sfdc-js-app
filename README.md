@@ -25,7 +25,7 @@ Tool to create the zip
 #### Install
 Install package's dependencies
 
-`npm install p7zip` 
+`npm install` 
 
 ####Run the app
 
